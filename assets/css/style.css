@@ -1,0 +1,207 @@
+@font-face {
+    font-family: Raleway;
+    src: url("../fonts/Raleway-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: Oswald;
+    src: local("../fonts/Oswald-VariableFont_wght.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #1D1D11;
+}
+
+#navbarBrandFather {
+    padding: 1rem;
+    text-decoration: none;
+    font-family: Raleway, serif;
+    font-size: 3rem;
+}
+
+#navbarBrandFather a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: 0 auto;
+    border-bottom: whitesmoke solid 1px;
+    align-items: center;
+}
+
+#navItems {
+    padding: 1.5rem;
+}
+
+#navItems a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 0.4rem;
+    display: block;
+}
+
+#navItems a:hover {
+    border: solid 1px lightgray;
+    border-radius: 1rem;
+}
+
+#navItems a:active {
+    background-color: whitesmoke;
+    color: #1D1D11;
+    border-radius: 1rem;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#banner div img {
+    height: 600px;
+    width: auto;
+    border-radius: 11rem 11rem 0 0;
+    border: double 1rem lightgray;
+}
+
+#textArea {
+    padding-top: 4rem;
+    padding-left: 2rem;
+    color: whitesmoke;
+}
+
+#textArea h1 {
+    font-size: 3rem;
+}
+
+#textArea h1 span {
+    font-family: Oswald, serif;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+#skills {
+    padding: 0.7rem;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+#skills h1 {
+    text-align: center;
+    color: whitesmoke;
+    padding-bottom: 1rem;
+}
+
+.iconText {
+    flex-flow: row;
+}
+
+#skillChartItems {
+    text-align: center;
+    color: whitesmoke;
+    border-right: solid lightgray 1px;
+}
+
+#contact {
+    color: whitesmoke;
+    max-width: 1500px;
+    margin: 0 auto ;
+}
+
+.bi {
+    background-color: transparent;
+}
+
+#footer {
+    background-color: darkslategrey;
+    padding: 1rem;
+}
+
+#footer h1 {
+    background-color: transparent;
+    text-align: center;
+}
+
+#footer p {
+    background-color: transparent;
+    text-align: center;
+}
+
+/*--------Media Queries---------*/
+@media screen and (max-width: 1000px) {
+    #banner div img {
+        padding: 0.4rem;
+        height: 500px;
+    }
+
+    #textArea h1 {
+        font-size: 2rem;
+    }
+
+    #textArea {
+        padding-top: 3rem;
+    }
+
+    #textArea h1 span {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 763px) {
+    #banner div img {
+        padding: 0.2rem;
+        height: 350px;
+    }
+
+    #textArea {
+        padding-top: 0.5rem;
+    }
+
+    #textArea h1 span {
+        font-size: 2.7rem;
+    }
+
+    #banner {
+        display: block;
+        text-align: center;
+    }
+
+    #banner div img {
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #skillChartItems {
+        border-bottom: solid 1px lightgray;
+    }
+}
+
+/*--------KeyFrames---------*/
+@keyframes animatedButton {
+    0% {
+        background-color: #0a58ca;
+    }
+
+    30% {
+        background-color: black;
+    }
+
+    60% {
+        background-color: red;
+    }
+
+    100% {
+        background-color: green;
+    }
+}
